@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+:root {
+  --textColor: #fff;
+  --backgroundColor: #24252a;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+  box-shadow: 1px 1px 12px black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.349);
+}
+
+button {
+  background-color: rgba(0, 136, 169, 1);
+  padding: 10px 20px;
+  border-radius: 24px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+ul li a {
+  transition: all 0.3s ease;
+}
+
+/*Exercicios da Live abaixo*/
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  margin-top: 100px;
+  box-shadow: 0 5px 10px #333;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+}
+
+.app__title {
+  text-align: center;
+  color: var(--textColor);
+  padding: 15px;
+  font-size: 20px;
+}
+
+.calc__form {
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.calc__input {
+  margin: 10px;
+}
+
+.secret__number__div {
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+}
+
+.secret__number__div span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.number__guess {
+  background-color: transparent;
+  border: none;
+  color: var(--textColor);
+  border-bottom: 1px solid rgba(0, 136, 169, 1);
+  filter: drop-shadow(1px 1px 1px rgba(0, 136, 169, 1));
+  margin-left: 40px;
+  text-align: center;
+}
+
+.number__guess:focus {
+  outline: none;
+}
+
+.message {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.app__container {
+  margin-top: 50px;
+}
+
+.color__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.text__color {
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: color 0.5s ease;
+}
+
+.botao__cor {
+  margin-left: 0;
+}

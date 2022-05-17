@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">INSERTLOGO</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Log-in</a></li>
+          <li><a href="#">Download</a></li>
+        </ul>
+      </nav>
+      <li>
+        <a href="#"><button>Inscreva-se</button></a>
+      </li>
+    </header>
+    <main>
+      <div class="primeiro card">
+        <h1 class="app__title">Mudança de Cor</h1>
+        <div class="color__container">
+          <p class="text__color">Esse e um texto teste</p>
+          <button class="button__color">Mudar Cor</button>
+        </div>
+      </div>
+      <div class="segundo card">
+        <h1 class="app__title">Cálculo</h1>
+        <form class="calc__form">
+          <input
+            type="number"
+            class="input__number1 calc__input"
+            placeholder="num1"
+          />
+          <input
+            type="number"
+            class="input__number2 calc__input"
+            placeholder="num2"
+          />
+          <select class="operator__select calc__input">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+          </select>
+          <button class="calc__button">Calcular</button>
+          <input
+            type="number"
+            class="result__number calc__input"
+            placeholder="result"
+            readonly
+          />
+        </form>
+      </div>
+      <div class="terceiro card">
+        <h1 class="app__title">Adivinhação</h1>
+        <div class="app__container">
+          <p class="message">Adivinhe o numero:</p>
+          <div class="secret__number__div">
+            <span class="secret__number">?</span>
+          </div>
+          <input type="number" class="number__guess" />
+          <button class="number__button">Chutar!</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
