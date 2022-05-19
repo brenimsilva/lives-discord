@@ -37,7 +37,8 @@ const num2 = document.querySelector(".input__number2");
 const btnCalc = document.querySelector(".calc__button");
 const operator = document.querySelector(".operator__select");
 const result = document.querySelector(".result__number");
-function calcular() {
+function calcular(e) {
+  e.preventDefault()
   switch (operator.value) {
     case "+":
       result.value = +num1.value + +num2.value;
